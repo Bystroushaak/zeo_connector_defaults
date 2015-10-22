@@ -16,5 +16,5 @@ def _in_path(fn):
 
 
 # Variables ===================================================================
-SERVER_CONF_PATH = _in_path("zeo.conf")
-CLIENT_CONF_PATH = _in_path("zeo_client.conf")
+_SERVER_CONF_PATH = _in_path("zeo.conf")
+_CLIENT_CONF_PATH = _in_path("zeo_client.conf")
