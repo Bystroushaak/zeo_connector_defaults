@@ -10,11 +10,14 @@ import environment_generator
 
 
 # Functions ===================================================================
-def _in_path(fn):
+def _in_path(fn, dirname="default_data"):
     dirname = os.path.dirname(__file__)
-    return os.path.join(os.path.abspath(dirname), "default_data", fn)
+    return os.path.join(os.path.abspath(dirname), dirname, fn)
 
 
 # Variables ===================================================================
-_SERVER_CONF_PATH = _in_path("zeo.conf")
-_CLIENT_CONF_PATH = _in_path("zeo_client.conf")
+SERVER_CONF_PATH = _in_path(fn="zeo.conf", dirname="default_data")
+CLIENT_CONF_PATH = _in_path(fn="zeo_client.conf", dirname="default_data")
+
+_SERVER_CONF_PATH = _in_path(fn="zeo.conf", dirname="template_data")
+_CLIENT_CONF_PATH = _in_path(fn="zeo_client.conf", dirname="template_data")
