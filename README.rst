@@ -14,7 +14,7 @@ Introduction
 
 Default configuration files and configuration file generator for zeo_connector_.
 
-.. _zeo_connector_: https://github.com/Bystroushaak/zeo_connector
+.. _zeo_connector: https://github.com/Bystroushaak/zeo_connector
 
 Documentation
 -------------
