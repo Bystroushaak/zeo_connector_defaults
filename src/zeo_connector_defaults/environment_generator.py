@@ -27,7 +27,10 @@ def data_context(fn, mode="r"):
         return f.read()
 
 
-def tmp_context_name(fn):
+def tmp_context_name(fn=None):
+    if not fn:
+        return TMP_DIR
+
     return os.path.join(TMP_DIR, fn)
 
 
@@ -65,3 +68,8 @@ def generate_environment():
 def cleanup_environment():
     SERV.terminate()
     shutil.rmtree(TMP_DIR)
+    if os.path.exists(TMP_DIR):
+        os.rmdir(TMP_DIR)
+
+    global TMP_DIR
+    TMP_DIR = None

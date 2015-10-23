@@ -6,7 +6,11 @@
 # Imports =====================================================================
 import os.path
 
-import environment_generator
+from environment_generator import tmp_context
+from environment_generator import tmp_context_name
+
+from environment_generator import generate_environment
+from environment_generator import cleanup_environment
 
 
 # Functions ===================================================================
