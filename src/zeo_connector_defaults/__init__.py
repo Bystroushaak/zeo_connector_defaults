@@ -15,8 +15,8 @@ from environment_generator import cleanup_environment
 
 # Functions ===================================================================
 def _in_path(fn, dirname="default_data"):
-    dirname = os.path.dirname(__file__)
-    return os.path.join(os.path.abspath(dirname), dirname, fn)
+    pwd = os.path.dirname(__file__)
+    return os.path.join(os.path.abspath(pwd), dirname, fn)
 
 
 # Variables ===================================================================
