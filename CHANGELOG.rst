@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.2.2
+-----
+    - Small bugfix.
+    - Removed unused files.
+
 0.2.1
 -----
     - Switched to complete randomly generated ZEO environment (random name in /tmp, and random ports for ZEO server process).

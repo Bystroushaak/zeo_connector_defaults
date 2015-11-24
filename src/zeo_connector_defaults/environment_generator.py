@@ -70,6 +70,7 @@ def generate_environment():
             Template(data_context("zeo.conf")).substitute(
                 path=TMP_PATH,
                 server=ZEO_SERVER,
+                port=ZEO_PORT,
             )
         )
 
@@ -78,7 +79,6 @@ def generate_environment():
     with open(client_config_path, "w") as f:
         f.write(
             Template(data_context("zeo_client.conf")).substitute(
-                path=TMP_PATH,
                 server=ZEO_SERVER,
                 port=ZEO_PORT,
             )
